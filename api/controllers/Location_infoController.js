@@ -6,6 +6,15 @@
  */
 
 module.exports = {
-	
-};
+	get:function(req,res){
+		Location_info.find()
+					.exec(function(err,location_infoes){
+						if(err){
+							return res.json(err);
 
+						}
+						return res.json(location_infoes);
+					})
+
+	}
+};
