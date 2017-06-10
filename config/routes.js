@@ -36,7 +36,15 @@ module.exports.routes = {
     view: 'homepage'
   },
   '/devices': 'Device_infoController.get',
-  '/devices/:d_id': 'Device_infoController.getdevice'
+  '/devices/:d_id': 'Device_infoController.getdevice',
+  '/atmosphere': 'Device_atmosphereController.get',
+  '/battery': 'Device_batteryController.get',
+  '/event': 'Device_eventController.get',
+  '/location': 'Device_locationController.get',
+  '/status': 'Device_statusController.get',
+  '/voltage': 'Device_voltageController.get'
+
+
 
   /***************************************************************************
   *                                                                          *
