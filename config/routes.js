@@ -42,7 +42,16 @@ module.exports.routes = {
   '/event': 'Device_eventController.get',
   '/location': 'Device_locationController.get',
   '/status': 'Device_statusController.get',
-  '/voltage': 'Device_voltageController.get'
+  '/voltage': 'Device_voltageController.get',
+
+  '/experiment/datapoint': 'Experiment_datapointController.get',
+  '/experiment/event': 'Experiment_eventController.get',
+  '/experiment': 'Experiment_infoController.get',
+  '/experiment/run': 'Experiment_runController.get',
+  '/experiment/tester': 'Experiment_testerController.get',
+  '/location/building': 'Location_buildingController.get',
+  '/location/info': 'Location_infoController.get'
+
 
 
 
